@@ -18,6 +18,10 @@ All data is displayed in metric units.
 
 Non-existing inputs will result in a error notification.
 
+## Security !!
+
+**All API Calls are made from client-side directly to openweathermap.org, this means that your API key will be exposed to your clients.**
+
 ## Contributions
 
 This React App is created with the use of Create React App (See below).
