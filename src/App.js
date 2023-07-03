@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 function App() {
   const errorNotify = () => toast("Locatie niet gevonden.");
 
-  const API_KEY = 'API_KEY_HERE'; // https://openweathermap.org/
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   const [data,setData] = useState({})
   const  [location, setLocation] = useState('')
@@ -17,11 +17,11 @@ function App() {
     if (event.key === 'Enter') {
       axios.get(url).then((response) => {
         setData(response.data)
-        console.log(response.data)
-      })
+/*         console.log(response.data)
+ */      })
       .catch(function (error) {
-        console.log(JSON.stringify(error))
-        errorNotify()
+/*         console.log(JSON.stringify(error))
+ */        errorNotify()
       })
       setLocation('')
     }
