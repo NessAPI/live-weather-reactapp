@@ -1,6 +1,7 @@
 # Live Weather App
 
 A simple react app that shows weather info based on input of location.
+Demo: https://live-weather-reactapp.vercel.app/
 
 ## Configuration
 
